@@ -126,7 +126,10 @@ iocage fstab -a "${JAIL_NAME}" "${CONFIG_PATH}" /config nullfs rw 0 0
 #
 #####
 
+# Always copy across the latest version of the sample configuration file
 iocage exec "${JAIL_NAME}" cp /usr/local/etc/dnsmasq.conf.sample /config
+# Do not overwrite dnsmasq.conf if it already exists
+iocage exec "${JAIL_NAME}" cp -n /usr/local/etc/dnsmasq.conf.sample /config/dnsmasq.conf 2>/dev/null
 
 iocage exec "${JAIL_NAME}" sysrc dnsmasq_enable="YES"
 iocage exec "${JAIL_NAME}" sysrc dnsmasq_conf="/config/dnsmasq.conf"
