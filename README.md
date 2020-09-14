@@ -8,7 +8,7 @@ This is a simple script to automate the installation of DNSMasq in a FreeNAS jai
 This script will work with FreeNAS 11.3, and it should also work with TrueNAS CORE 12.0. Due to the EOL status of FreeBSD 11.2, it is unlikely to work reliably with earlier releases of FreeNAS.
 
 ## Usage
-A local DNS resolver for small networks. It also provides other network services that may be missing in low-cost routers. 
+A local DNS resolver for small networks. DNSMasq also provides network services that may be missing in low-cost routers. 
 
 ### Prerequisites
 
