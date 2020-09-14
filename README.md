@@ -1,7 +1,5 @@
 # freenas-iocage-dnsmasq
 
-*** UNDER CONSTRUCTION ***
-
 This is a simple script to automate the installation of DNSMasq in a FreeNAS jail. It will create a jail, install the latest version of DNSMasq for FreeNAS, and store the `dnsmasq.conf` file outside the jail.  
 
 ## Status
