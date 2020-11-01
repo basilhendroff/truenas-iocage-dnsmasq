@@ -1,9 +1,9 @@
 # truenas-iocage-dnsmasq
 
-This is a simple script to automate the installation of DNSMasq in a FreeNAS jail. It will create a jail, install the latest version of DNSMasq for FreeNAS, and store the `dnsmasq.conf` file outside the jail.  
+This is a simple script to automate the installation of DNSMasq in a TrueNAS jail. It will create a jail, install the latest version of DNSMasq for TrueNAS, and store the `dnsmasq.conf` file outside the jail.  
 
 ## Status
-This script will work with FreeNAS 11.3, and TrueNAS CORE 12 and later. Due to the EOL status of FreeBSD 11.2, it is unlikely to work reliably with earlier releases of FreeNAS.
+This script will work with FreeNAS 11.3, and TrueNAS CORE 12 or later. Due to the EOL status of FreeBSD 11.2, it is unlikely to work reliably with earlier releases of FreeNAS.
 
 ## Usage
 A local DNS resolver for small networks. DNSMasq also provides network services that may be missing in low-cost routers. 
@@ -14,7 +14,7 @@ Although not required, it's recommended to create a Dataset named `apps` with a 
 
 ### Installation
 
-Download the repository to a convenient directory on your FreeNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-iocage-dnsmasq`. Then change into the new truenas-iocage-dnsmasq directory and create a file called dnsmasq-config with your favorite text editor. In its minimal form, it would look like this:
+Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-iocage-dnsmasq`. Then change into the new truenas-iocage-dnsmasq directory and create a file called dnsmasq-config with your favorite text editor. In its minimal form, it would look like this:
 
 ```
 JAIL_IP="10.1.1.3"
