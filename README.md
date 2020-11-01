@@ -14,7 +14,7 @@ Although not required, it's recommended to create a Dataset named `apps` with a 
 
 ### Installation
 
-Download the repository to a convenient directory on your FreeNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/freenas-iocage-dnsmasq`. Then change into the new freenas-iocage-dnsmasq directory and create a file called dnsmasq-config with your favorite text editor. In its minimal form, it would look like this:
+Download the repository to a convenient directory on your FreeNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-iocage-dnsmasq`. Then change into the new truenas-iocage-dnsmasq directory and create a file called dnsmasq-config with your favorite text editor. In its minimal form, it would look like this:
 
 ```
 JAIL_IP="10.1.1.3"
