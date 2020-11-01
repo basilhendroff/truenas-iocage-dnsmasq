@@ -3,7 +3,7 @@
 This is a simple script to automate the installation of DNSMasq in a FreeNAS jail. It will create a jail, install the latest version of DNSMasq for FreeNAS, and store the `dnsmasq.conf` file outside the jail.  
 
 ## Status
-This script will work with FreeNAS 11.3, and it should also work with TrueNAS CORE 12.0. Due to the EOL status of FreeBSD 11.2, it is unlikely to work reliably with earlier releases of FreeNAS.
+This script will work with FreeNAS 11.3, and TrueNAS CORE 12 and later. Due to the EOL status of FreeBSD 11.2, it is unlikely to work reliably with earlier releases of FreeNAS.
 
 ## Usage
 A local DNS resolver for small networks. DNSMasq also provides network services that may be missing in low-cost routers. 
