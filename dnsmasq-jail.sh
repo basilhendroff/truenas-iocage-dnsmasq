@@ -37,8 +37,7 @@ fi
 INCLUDES_PATH="${SCRIPTPATH}"/includes
 
 JAILS_MOUNT=$(zfs get -H -o value mountpoint $(iocage get -p)/iocage)
-RELEASE=$(freebsd-version | sed "s/STABLE/RELEASE/g" | sed "s/-p[0-9]*//")
-#RELEASE="12.1-RELEASE"
+RELEASE=$(freebsd-version | cut -d - -f -1)"-RELEASE"
 
 #####
 #
