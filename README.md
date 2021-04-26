@@ -14,7 +14,7 @@ Although not required, it's recommended to create a Dataset named `apps` with a 
 
 ### Installation
 
-Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-iocage-dnsmasq`. Then change into the new truenas-iocage-dnsmasq directory and create a file called dnsmasq-config with your favorite text editor. In its minimal form, it would look like this:
+Download the repository to a convenient directory on your TrueNAS system by changing to that directory and running `git clone https://github.com/basilhendroff/truenas-iocage-dnsmasq`. Then change into the new truenas-iocage-dnsmasq directory and create a file called `dnsmasq-config` with your favorite text editor. In its minimal form, it would look like this:
 
 ```
 JAIL_IP="10.1.1.3"
@@ -36,7 +36,7 @@ In addition, there are some other options which have sensible defaults, but can 
 
 ### Execution
 
-Once you've downloaded the script and prepared the configuration file, run this script (`./dnsmasq-jail.sh`). The script will run for several minutes. When it finishes, your jail will be created and DNSMasq will be installed.
+Once you've downloaded the script and prepared the configuration file, run this script (`script dnsmasq.log ./dnsmasq-jail.sh`). The script will run for several minutes. When it finishes, your jail will be created and DNSMasq will be installed.
 
 ### Test
 
